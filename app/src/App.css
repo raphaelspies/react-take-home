@@ -39,6 +39,11 @@
 }
 
 .campaign-vertical-subheader {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 .campaign-payPerInstall {
@@ -62,12 +67,29 @@
   max-width: 120px;
   border-radius: 10px;
   overflow-x: hidden !important;
-
 }
 
 .media-image {
+  position: relative;
   border-radius: 10px;
   height: 200px;
+}
+
+.play-button-overlay {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  text-align: center;
+  position: sticky;
+  z-index: 2;
+  height: 32px;
+  width: 32px;
+}
+
+.media-image:hover .play-button-overlay {
+  opacity: 1;
 }
 
 .icon {
@@ -79,5 +101,8 @@
   padding: 10px;
   background-color: white;
   opacity: 50%;
+}
 
+.share-button {
+  cursor: pointer;
 }

@@ -31,7 +31,6 @@ function App() {
         {!isLoaded ? "Loading..." : data.campaigns.map((campaign) => {
           return (<Campaign campaign={campaign} key={campaign.campaign_name}/>)
         })}
-        Media Object (medias = [...args])
       </div>
     </div>
   );
