@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        App Header
+        PLUGS
       </header>
       <div className="App-body">
         {!isLoaded ? "Loading..." : data.campaigns.map((campaign) => {

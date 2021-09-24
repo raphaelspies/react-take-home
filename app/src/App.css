@@ -1,11 +1,6 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  background-color: rgb(229, 238, 243);
 }
 
 .App-header {
@@ -39,19 +34,50 @@
 
 .horizontal-campaign-header {
   display: flex;
+  font-weight: bold;
   flex-direction: row;
 }
 
 .campaign-vertical-subheader {
-  flex-direction: column;
+}
+
+.campaign-payPerInstall {
+  border: 10px;
+  color: green;
 }
 
 .campaign-image-carousel {
   display: flex;
   flex-direction: row;
+  overflow-x: scroll;
+}
 
+.campaign-icon {
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .media-image-div {
   padding: 10px;
+  max-width: 120px;
+  border-radius: 10px;
+  overflow-x: hidden !important;
+
+}
+
+.media-image {
+  border-radius: 10px;
+  height: 200px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin: 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  opacity: 50%;
+
 }

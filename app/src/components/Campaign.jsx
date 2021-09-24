@@ -14,9 +14,11 @@ export default function Campaign(props){
   return (
     <div className="campaign">
       <div className="horizontal-campaign-header">
-        <img src={`${campaign_icon_url}`} height={"100px"} width={"100px"}/>
+        <img src={`${campaign_icon_url}`} height={"50px"} width={"50px"} className="campaign-icon"/>
         <div className="campaign-vertical-subheader">
           {campaign_name}
+        </div>
+        <div className="campaign-payPerInstall">
           {pay_per_install}
         </div>
       </div>
